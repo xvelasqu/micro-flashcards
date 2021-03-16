@@ -1,7 +1,7 @@
 A1_2:
   - id: 1
-    frontText: Uç
-    backText: fly
+    frontText: Uçmak
+    backText: to fly
     type: vocabulary
     difficulty: 3
   - id: 2
@@ -165,7 +165,7 @@ A1_2:
     type: vocabulary
     difficulty: 3
   - id: 34
-    frontText: daınik
+    frontText: dağınık
     backText: messy, disorganized, scattered
     type: vocabulary
     difficulty: 3
@@ -260,7 +260,7 @@ A1_2:
     type: vocabulary
     difficulty: 3
   - id: 53
-    frontText: beşıncı
+    frontText: beşinci
     backText: fifth (5.)
     type: vocabulary
     difficulty: 3
@@ -300,7 +300,7 @@ A1_2:
     type: vocabulary
     difficulty: 3
   - id: 61
-    frontText: yayarlı
+    frontText: yararlı
     backText: helpful, beneficial
     type: vocabulary
     difficulty: 3
