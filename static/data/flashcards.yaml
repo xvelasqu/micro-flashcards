@@ -1,0 +1,321 @@
+A1_2:
+  - id: 1
+    frontText: Uç
+    backText: fly
+    type: vocabulary
+    difficulty: 3
+  - id: 2
+    frontText: yemek yemek
+    backText: to eat food
+    type: vocabulary
+    difficulty: 3
+  - id: 3
+    frontText: hece
+    backText: syllable
+    type: vocabulary
+    difficulty: 3
+  - id: 4
+    frontText: hecelemek
+    backText: to spell
+    type: vocabulary
+    difficulty: 3
+  - id: 5
+    frontText: Kodlar mısın?
+    backText: Can you code/spell your name? (with city/country names!)
+    type: vocabulary
+    difficulty: 3
+  - id: 6
+    frontText: kalkmak
+    backText: to get up
+    type: vocabulary
+    difficulty: 3
+  - id: 7
+    frontText: oturmak
+    backText: to sit down
+    type: vocabulary
+    difficulty: 3
+  - id: 8
+    frontText: uyanmak
+    backText: to wake up
+    type: vocabulary
+    difficulty: 3
+  - id: 9
+    frontText: korkmak
+    backText: to be scared
+    type: vocabulary
+    difficulty: 3
+  - id: 10
+    frontText: durak
+    backText: station
+    type: vocabulary
+    difficulty: 3
+  - id: 11
+    frontText: anne
+    backText: mom
+    type: vocabulary
+    difficulty: 3
+  - id: 12
+    frontText: baba
+    backText: father
+    type: vocabulary
+    difficulty: 3
+  - id: 13
+    frontText: babaanne
+    backText: grandma
+    type: vocabulary
+    difficulty: 3
+  - id: 14
+    frontText: dede
+    backText: grandfather
+    type: vocabulary
+    difficulty: 3
+  - id: 15
+    frontText: abla
+    backText: elder sister
+    type: vocabulary
+    difficulty: 3
+  - id: 16
+    frontText: kız kardeş
+    backText: younger sister
+    type: vocabulary
+    difficulty: 3
+  - id: 17
+    frontText: ağabey / abi
+    backText: elder brother
+    type: vocabulary
+    difficulty: 3
+  - id: 18
+    frontText: erkek kardeş
+    backText: younger brother
+    type: vocabulary
+    difficulty: 3
+  - id: 19
+    frontText: emekli
+    backText: retired
+    type: vocabulary
+    difficulty: 3
+  - id: 20
+    frontText: ilkokul
+    backText: primary school
+    type: vocabulary
+    difficulty: 3
+  - id: 21
+    frontText: anaokulu
+    backText: kindergarten
+    type: vocabulary
+    difficulty: 3
+  - id: 22
+    frontText: eş
+    backText: spouse
+    type: vocabulary
+    difficulty: 3
+  - id: 23
+    frontText: karı
+    backText: wife
+    type: vocabulary
+    difficulty: 3
+  - id: 24
+    frontText: koca
+    backText: husband
+    type: vocabulary
+    difficulty: 3
+  - id: 25
+    frontText: oğul
+    backText: son
+    type: vocabulary
+    difficulty: 3
+  - id: 26
+    frontText: kız (evlat)
+    backText: daughter
+    type: vocabulary
+    difficulty: 3
+  - id: 27
+    frontText: babamla / babam ile
+    backText: with my father
+    type: vocabulary
+    difficulty: 3
+  - id: 28
+    frontText: cüzdan
+    backText: wallet
+    type: vocabulary
+    difficulty: 3
+  - id: 29
+    frontText: göz
+    backText: eye
+    type: vocabulary
+    difficulty: 3
+  - id: 30
+    frontText: soru sormak
+    backText: ask question/s
+    type: vocabulary
+    difficulty: 3
+  - id: 31
+    frontText: diş
+    backText: tooth
+    type: vocabulary
+    difficulty: 3
+  - id: 32
+    frontText: duş
+    backText: shower
+    type: vocabulary
+    difficulty: 3
+  - id: 33
+    frontText: alın
+    backText: forehead
+    type: vocabulary
+    difficulty: 3
+  - id: 34
+    frontText: daınik
+    backText: messy, disorganized, scattered
+    type: vocabulary
+    difficulty: 3
+  - id: 35
+    frontText: aile
+    backText: family
+    type: vocabulary
+    difficulty: 3
+  - id: 36
+    frontText: beraber
+    backText: together
+    type: vocabulary
+    difficulty: 3
+  - id: 37
+    frontText: hep beraber
+    backText: all together
+    type: vocabulary
+    difficulty: 3
+  - id: 38
+    frontText: hep
+    backText: always, all
+    type: vocabulary
+    difficulty: 3
+  - id: 39
+    frontText: muhasebeci
+    backText: accountant
+    type: vocabulary
+    difficulty: 3
+  - id: 40
+    frontText: muhasebe
+    backText: accounting
+    type: vocabulary
+    difficulty: 3
+  - id: 41
+    frontText: görmek
+    backText: to see
+    type: vocabulary
+    difficulty: 3
+  - id: 42
+    frontText: bakmak
+    backText: to look
+    type: vocabulary
+    difficulty: 3
+  - id: 43
+    frontText: emekli
+    backText: retired
+    type: vocabulary
+    difficulty: 3
+  - id: 44
+    frontText: sağlık
+    backText: health
+    type: vocabulary
+    difficulty: 3
+  - id: 45
+    frontText: dayı
+    backText: uncle (male, from father)
+    type: vocabulary
+    difficulty: 3
+  - id: 46
+    frontText: amca
+    backText: uncle (male, from mother)
+    type: vocabulary
+    difficulty: 3
+  - id: 47
+    frontText: hala
+    backText: aunt (from father)
+    type: vocabulary
+    difficulty: 3
+  - id: 48
+    frontText: teyze
+    backText: aunt (from mother)
+    type: vocabulary
+    difficulty: 3
+  - id: 49
+    frontText: birinci
+    backText: first (1.)
+    type: vocabulary
+    difficulty: 3
+  - id: 50
+    frontText: ikinci
+    backText: second (2.)
+    type: vocabulary
+    difficulty: 3
+  - id: 51
+    frontText: üçüncü
+    backText: third (3.)
+    type: vocabulary
+    difficulty: 3
+  - id: 52
+    frontText: dördüncü
+    backText: fourth (4.)
+    type: vocabulary
+    difficulty: 3
+  - id: 53
+    frontText: beşıncı
+    backText: fifth (5.)
+    type: vocabulary
+    difficulty: 3
+  - id: 54
+    frontText: ilk defa
+    backText: first time
+    type: vocabulary
+    difficulty: 3
+  - id: 55
+    frontText: resim öğretmeni
+    backText: art teacher
+    type: vocabulary
+    difficulty: 3
+  - id: 56
+    frontText: başım ağrıyor
+    backText: I have a headache
+    type: vocabulary
+    difficulty: 3
+  - id: 57
+    frontText: temiz
+    backText: clean
+    type: vocabulary
+    difficulty: 3
+  - id: 58
+    frontText: pahalı
+    backText: expensive
+    type: vocabulary
+    difficulty: 3
+  - id: 59
+    frontText: küçük
+    backText: small
+    type: vocabulary
+    difficulty: 3
+  - id: 60
+    frontText: büyük
+    backText: big
+    type: vocabulary
+    difficulty: 3
+  - id: 61
+    frontText: yayarlı
+    backText: helpful, beneficial
+    type: vocabulary
+    difficulty: 3
+  - id: 62
+    frontText: yeni
+    backText: new
+    type: vocabulary
+    difficulty: 3
+  - id: 63
+    frontText: ayakkabı
+    backText: shoe
+    type: vocabulary
+    difficulty: 3
+  - id: 64
+    frontText: zeki
+    backText: smart
+    type: vocabulary
+    difficulty: 3
