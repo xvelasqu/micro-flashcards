@@ -21,7 +21,7 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '15.x'
       
     # Runs a single command using the runners shell
     - name: Install npm dependencies
