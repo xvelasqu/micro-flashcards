@@ -1,9 +1,7 @@
 name: Svelte CI
 
 # Controls when the action will run. 
-on:
-  push:
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -48,5 +46,7 @@ jobs:
         privateKey: ${{ secrets.SERVER_SSH_KEY }}
         port: ${{ secrets.REMOTE_PORT }}
         debug: false
-        command: 'pkill -f node && nohup npm run prod < /dev/null &> /dev/null &
- 
+        command: |
+          pkill -f node
+          cd ${{ secrets.REMOTE_TARGET }}
+          nohup npm run prod < /dev/null &> /dev/null &
