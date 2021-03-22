@@ -42,11 +42,11 @@ jobs:
         TARGET: ${{ secrets.REMOTE_TARGET }}
     
     - name: Kill running node processes & Start game coordinator 
-      uses: JimCronqvist/action-ssh@master
+      uses: ian-whitestone/action-ssh@master
       with:
-        hosts: '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PORT }}'
+        hosts: '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}'
         privateKey: ${{ secrets.SERVER_SSH_KEY }}
+        port: ${{ secrets.REMOTE_PORT }}
         debug: false
-        command: |
-          pkill -f node
-          nohup npm run prod < /dev/null &> /dev/null &
+        command: 'pkill -f node && nohup npm run prod < /dev/null &> /dev/null &
+ 
