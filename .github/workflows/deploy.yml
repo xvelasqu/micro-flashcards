@@ -44,7 +44,7 @@ jobs:
     - name: Kill running node processes & Start game coordinator 
       uses: JimCronqvist/action-ssh@master
       with:
-        hosts: '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}'
+        hosts: '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PORT }}'
         privateKey: ${{ secrets.SERVER_SSH_KEY }}
         debug: false
         command: |
