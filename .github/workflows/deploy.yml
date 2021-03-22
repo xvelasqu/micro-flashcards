@@ -16,6 +16,19 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    # Runs a single command using the runners shell
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+      
+    # Runs a single command using the runners shell
+    - name: Install npm dependencies
+      run: npm install
+      
+    - name: Run build task
+      run: npm run build --if-present
       
     - name: Deploy repo to Server
       uses: easingthemes/ssh-deploy@v2.1.5
@@ -36,6 +49,4 @@ jobs:
         debug: false
         command: |
           pkill -f node
-          npm install
-          npm run build
           nohup npm run prod < /dev/null &> /dev/null &
