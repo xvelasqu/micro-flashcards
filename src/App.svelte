@@ -56,7 +56,11 @@
   }
 </script>
 
-<main>
+<main class="
+  text-center
+  p-1
+  mx-auto
+">
   {#if pendingCardsIds.length}
     <FlashCard contents={cardsDataMap[currentCardId ? currentCardId : 0]} showBack={showBackOfCurrentCard} />
     {#if !showBackOfCurrentCard}
@@ -105,18 +109,4 @@
   :global(body){
     background-color: #f0f0f0;
   }
-
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-    background-color: inherit;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
