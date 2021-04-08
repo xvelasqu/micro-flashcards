@@ -1,103 +1,58 @@
 <script lang="ts">
-  // @ts-nocheck
-  import FlashCard from './FlashCard.svelte'
-  import type { FlashCardContents } from './FlashCard'
+  import FullDeckGame from "./FullDeckGame.svelte"
 
-  import { A1_2 } from '../static/data/flashcards.yaml'
-  
-  let currentCardId : number|null
-  let showBackOfCurrentCard : boolean = false
-
-  const cardsDataMap : Record<number, FlashCardContents> = {}
-  let correctCardsIds : number[] = []
-  let pendingCardsIds : number[] = []
-
-  for (const rawFlashcardContents of A1_2) {
-    cardsDataMap[rawFlashcardContents.id] = rawFlashcardContents
-    pendingCardsIds.push(rawFlashcardContents.id)
-  }
-  setRandomCardAsCurrent()
+  let fullDeckGameRunning = false
 
   /**
    * Functions
   */
-  function markCardAsCorrect(cardId : number) : void {
-    correctCardsIds.push(cardId)
-    correctCardsIds = correctCardsIds
 
-    const indexInPendingCardsArr = pendingCardsIds.indexOf(cardId)
-    if (indexInPendingCardsArr !== -1) {
-      pendingCardsIds.splice(indexInPendingCardsArr, 1)
-      pendingCardsIds = pendingCardsIds
-    } 
-    setRandomCardAsCurrent(cardId)
-  }
-
-  function markCardAsWrong(cardId : number) : void {
-    setRandomCardAsCurrent(cardId)
-  }
-
-  function setRandomCardAsCurrent(cardToAvoid : number|null = null) : void {
-    if (pendingCardsIds.length === 1) {
-      currentCardId = pendingCardsIds[0]
-    }
-    else if (pendingCardsIds.length > 1) {
-      let randomCardId : number|null = null
-      while (randomCardId === null || (cardToAvoid && randomCardId === cardToAvoid)) {
-        randomCardId = pendingCardsIds[Math.floor(Math.random() * pendingCardsIds.length)]
-      }
-      currentCardId = randomCardId
-    }
-    else {
-      currentCardId = null
-    }
-
-    showBackOfCurrentCard = false
-  }
 </script>
 
 <main class="
   text-center
-  p-1
   mx-auto
-">
-  {#if pendingCardsIds.length}
-    <FlashCard contents={cardsDataMap[currentCardId ? currentCardId : 0]} showBack={showBackOfCurrentCard} />
-    {#if !showBackOfCurrentCard}
-      <button 
-        class="mt-5 py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-700"
-        on:click={() => showBackOfCurrentCard = true}
-      >
-        Check answer
-      </button>
-    {:else}
-      <div class="flex space-x-4 justify-center items-center">
-        <button 
-          class="mt-5 py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-red-500 hover:bg-red-700"
-          on:click={() => markCardAsWrong(currentCardId ? currentCardId : 0)}
-        >
-          Wrong
-        </button>
-        <button 
-          class="mt-5 py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
-          on:click={() => markCardAsCorrect(currentCardId ? currentCardId : 0)}
-        >
-          Correct
-        </button>
-      </div>
-    {/if}
-    <p class="mt-5 text-gray-500">Cards left: {pendingCardsIds.length}</p>
+">  
+  {#if fullDeckGameRunning}
+    <FullDeckGame/>
   {:else}
-    <div class="flex flex-col items-center">
-      <p class="text-xl mb-10">🎉️ Congratulations! All done! =D</p>
-      <iframe class="mb-6" title="dum_tek_tk" width="560" height="315" src="https://www.youtube-nocookie.com/embed/isEzhladyzA?controls=0&autoplay=1&amp;start=44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <button 
-        class="mt-5 py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-700"
-        on:click={() => location.reload()}
-      >
-        Start over
-      </button>
-    </div>
+    <h1 class="mt-5">
+      <p>Turkish</p>
+      <p>Academy</p>
+      <p>Logo</p>
+    </h1>
+
+    <button 
+      class="
+        mt-5 py-10 px-32
+        max-w-full lg:max-w-2xl
+        rounded-lg shadow-md
+        bg-gray-100 hover:bg-gray-200"
+      on:click={() => fullDeckGameRunning = true}
+    >
+      <div class="flex align-middle justify-center">
+        <div class="
+          mr-6
+          flex flex-col
+          align-middle justify-center
+        ">            
+          <p class="text-4xl">
+            🗃️
+          </p>
+        </div>
+        <div class="
+          flex flex-col
+          justify-between
+        ">
+          <p class="text-4xl font-semibold text-gray-700">
+            Full Deck Game
+          </p>
+          <p class="text-xl text-gray-600">
+            All cards in random order
+          </p>
+        </div>
+      </div>
+    </button>
   {/if}
 </main>
 
